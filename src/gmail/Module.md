@@ -13,7 +13,7 @@ The following sections provide you with information on how to use the Ballerina 
 
 | Ballerina Language Version  | Gmail API Version |
 |:---------------------------:|:------------------------------:|
-|  1.0.0                     |   v1                           |
+|  1.0.1                     |   v1                           |
 
 ## Feature Overview
 
