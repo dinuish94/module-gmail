@@ -45,15 +45,6 @@ The `wso2/gmail` module contains operations to lists the history of changes to t
 
 ## Getting Started
 
-### Prerequisites
-Download and install [Ballerina](https://ballerinalang.org/downloads/).
-
-### Pull the Module
-You can pull the Gmail module from Ballerina Central using the command:
-```ballerina
-$ ballerina pull wso2/gmail
-```
-
 ## Sample
 First, import the `wso2/gmail` module into the Ballerina project.
 ```ballerina
@@ -129,7 +120,7 @@ The `readMessage` remote function reads messages. It returns the `Message` objec
 ```ballerina
 var response = gmailClient->readMessage(userId, <@untainted>messageId);
 if (response is gmail:Message) {
-    io:println("Sent Message: " + response);
+    io:println("Sent Message: " + response.toString());
 } else {
     io:println("Error: ", response);
 }
